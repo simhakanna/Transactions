@@ -1,0 +1,9 @@
+.img-but {
+  background-color: transparent;
+  border: none;
+}
+
+.img {
+  height: 20px;
+  width: 20px;
+}
