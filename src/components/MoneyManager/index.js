@@ -25,7 +25,7 @@ class MoneyManager extends Component {
     exp: 0,
     textI: '',
     amountI: '',
-    typeI: 'Income',
+    typeI: 'INCOME',
   }
 
   textChange = e => {
@@ -54,7 +54,7 @@ class MoneyManager extends Component {
     }
 
     if (textI !== '' && amountI !== '') {
-      if (typeI === 'Income') {
+      if (typeI === 'INCOME') {
         this.setState(prev => ({
           historyList: [...prev.historyList, newItem],
           bal: prev.bal + amountI,
@@ -75,7 +75,7 @@ class MoneyManager extends Component {
   }
 
   deleteHistory = (id, type, amount) => {
-    if (type === 'Income') {
+    if (type === 'INCOME') {
       this.setState(prev => ({
         historyList: prev.historyList.filter(each => each.id !== id),
         bal: prev.bal - amount,

@@ -10,7 +10,7 @@ const MoneyDetails = props => {
   return (
     <li className="his-item">
       <p className="point">{title}</p>
-      <p className="point">{amount}</p>
+      <p className="point">Rs {amount}</p>
       <p className="sp">{type}</p>
       <button
         data-testid="delete"
