@@ -2,9 +2,9 @@ import './index.css'
 
 const TransactionItem = props => {
   const {details} = props
-  const {optionId, displayText} = details
+  const {displayText} = details
 
-  return <option value={optionId}>{displayText}</option>
+  return <option value={displayText}>{displayText}</option>
 }
 
 export default TransactionItem
